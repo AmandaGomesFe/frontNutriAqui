@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 export default function EscolherPerfil({ navigation } : any) {
     return(
         <SafeAreaView>
-            <ImageBackground source={require('../../../assets/imagemBackground.png')} resizeMode="cover">
+            <ImageBackground source={require('../../../assets/imagemBackground.png')} resizeMode="cover" style={styles.imagemFundo}>
                 <View style={styles.containerButton}>
                     <Text style={styles.title}>Escolha o seu perfil</Text>
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Formulario-nutricionista')}>
@@ -33,11 +33,12 @@ const styles = StyleSheet.create({
     containerButton: {
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: '#666666',
         height: '100%',
         width: 400,
     },
-
+    imagemFundo: {
+        height: '100%'
+    },
     title: {
         fontWeight: "bold",
         fontSize: 25,
