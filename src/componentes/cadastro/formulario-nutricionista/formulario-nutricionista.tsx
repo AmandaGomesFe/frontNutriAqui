@@ -179,7 +179,8 @@ const style = StyleSheet.create({
         borderRadius: 15,
         width: '80%',
         fontSize: 16,
-        paddingStart: 15
+        paddingStart: 15,
+        height: 45,
     },
     inputsContainer: {
         height: '90%',
